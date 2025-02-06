@@ -1,5 +1,6 @@
 package com.example.woof
 
+import Navigation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -37,112 +38,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             WoofTheme {
-               WoofApp()
+               Navigation()
         }
     }
-}
+         }
+     }
 
-    @Composable
-    fun WoofApp() {
-        Scaffold(
-            /*topBar = {
-                WoofTopAppBar()
-            }*/
-        ) { it ->
-            LazyColumn(contentPadding = it) {
-                items(dogs) {
-                    DogItem(
-                        dog = it,
-                        modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
-                    )
-                }
-            }
-        }
-    }
-
-    @Composable
-    fun DogItem(
-        dog: Dog,
-        modifier: Modifier = Modifier
-    ) {
-        Card (modifier = modifier) {
-            Row(
-                modifier = modifier
-                    .fillMaxWidth()
-                    .padding(dimensionResource(id = R.dimen.padding_small))
-            ) {
-                DogIcon(dog.imageResourceId)
-                DogInformation(dog.name, dog.age)
-            }
-        }
-    }
-
-    @Composable
-    fun DogIcon(
-        @DrawableRes dogIcon: Int,
-        modifier: Modifier = Modifier
-    ) {
-        Image(
-            modifier = modifier
-                .size(dimensionResource(R.dimen.image_size))
-                .padding(dimensionResource(R.dimen.padding_small))
-                .clip(MaterialTheme.shapes.small),
-            contentScale = ContentScale.Crop,
-            painter = painterResource(dogIcon),
-
-            // Content Description is not needed here - image is decorative, and setting a null content
-            // description allows accessibility services to skip this element during navigation.
-
-            contentDescription = null
-        )
-    }
-    @Composable
-    fun DogInformation(
-        @StringRes dogName: Int,
-        dogAge: Int,
-        modifier: Modifier = Modifier
-    ) {
-        Column(modifier = modifier) {
-            Text(
-                text = stringResource(dogName),
-                style = MaterialTheme.typography.displayMedium,
-                modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small))
-            )
-            Text(
-                text = stringResource(R.string.years_old, dogAge),
-                style = MaterialTheme.typography.bodyLarge
-            )
-        }
-    }
-   /* @Composable
-    fun WoofTopAppBar(modifier: Modifier = Modifier) {
-        CenterAlignedTopAppBar(
-            title = {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Image(
-                        modifier = Modifier
-                            .size(dimensionResource(id = R.dimen.image_size))
-                            .padding(dimensionResource(id = R.dimen.padding_small)),
-                        painter = painterResource(R.drawable.ic_woof_logo),
-
-                        contentDescription = null
-                    )
-                    Text(
-                        text = stringResource(R.string.app_name),
-                        style = MaterialTheme.typography.displayLarge
-                    )
-                }
-            },
-            modifier = modifier
-        )
-    }*/
-    @Preview
-    @Composable
-    fun WoofDarkThemePreview() {
-        WoofTheme(darkTheme = true) {
-            WoofApp()
-        }
-    }
-}
