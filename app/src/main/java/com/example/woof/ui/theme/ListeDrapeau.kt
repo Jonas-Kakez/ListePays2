@@ -36,8 +36,8 @@ fun ListeDrapeau(navController: NavController) {
     ) { it ->
         LazyColumn(contentPadding = it) {
             items(dogs) {
-                DogItem(
-                    dog = it,
+                CountryItem(
+                    country = it,
                     modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
                 )
             }
@@ -46,8 +46,8 @@ fun ListeDrapeau(navController: NavController) {
 }
 
 @Composable
-fun DogItem(
-    dog: Dog,
+fun CountryItem(
+    country: Dog,
     modifier: Modifier = Modifier
 ) {
     Card (modifier = modifier) {
@@ -56,15 +56,15 @@ fun DogItem(
                 .fillMaxWidth()
                 .padding(dimensionResource(id = R.dimen.padding_small))
         ) {
-            DogIcon(dog.imageResourceId)
-            DogInformation(dog.name, dog.age)
+            CountryIcon(country.imageResourceId)
+            CountryInformation(country.name, country.age)
         }
     }
 }
 
 @Composable
-fun DogIcon(
-    @DrawableRes dogIcon: Int,
+fun CountryIcon(
+    @DrawableRes countryIcon: Int,
     modifier: Modifier = Modifier
 ) {
     Image(
@@ -73,7 +73,7 @@ fun DogIcon(
             .padding(dimensionResource(R.dimen.padding_small))
             .clip(MaterialTheme.shapes.small),
         contentScale = ContentScale.Crop,
-        painter = painterResource(dogIcon),
+        painter = painterResource(countryIcon),
 
         // Content Description is not needed here - image is decorative, and setting a null content
         // description allows accessibility services to skip this element during navigation.
@@ -82,7 +82,7 @@ fun DogIcon(
     )
 }
 @Composable
-fun DogInformation(
+fun CountryInformation(
     @StringRes dogName: Int,
     dogAge: Int,
     modifier: Modifier = Modifier

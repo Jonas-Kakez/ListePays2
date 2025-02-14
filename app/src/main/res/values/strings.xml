@@ -1,24 +1,51 @@
 <resources>
     <string name="app_name">Woof</string>
-    <string name="dog_name_1">INDE</string>
-    <string name="dog_name_2">IRAN</string>
-    <string name="dog_name_3">RDC</string>
-    <string name="dog_name_4">UNION EUROPEEN</string>
-    <string name="dog_name_5">ANGLETERRE</string>
-    <string name="dog_name_6">USA</string>
-    <string name="dog_name_7">MEXIQUE</string>
-    <string name="dog_name_8">AFRIQUE DU SUD</string>
-    <string name="dog_name_9">JAPON</string>
-    <string name="dog_description_1">Eating treats on the terrace</string>
-    <string name="dog_description_2">Barking at Daddy</string>
-    <string name="dog_description_3">Stealing socks</string>
-    <string name="dog_description_4">Meeting new animals</string>
-    <string name="dog_description_5">Digging in the garden</string>
-    <string name="dog_description_6">Chasing sea foam</string>
-    <string name="dog_description_7">Bothering her paw-rents</string>
-    <string name="dog_description_8">Sunbathing</string>
-    <string name="dog_description_9">Sleeping in dangerous places</string>
+
+    <!-- Country Names -->
+    <string name="country_name_1">INDE</string>
+    <string name="country_name_2">IRAN</string>
+    <string name="country_name_3">RDC</string>
+    <string name="country_name_4">UNION EUROPEEN</string>
+    <string name="country_name_5">ANGLETERRE</string>
+    <string name="country_name_6">USA</string>
+    <string name="country_name_7">MEXIQUE</string>
+    <string name="country_name_8">AFRIQUE DU SUD</string>
+    <string name="country_name_9">JAPON</string>
+
+    <!-- Country Codes -->
+    <string name="country_code_1">+91</string>
+    <string name="country_code_2">+98</string>
+    <string name="country_code_3">+243</string>
+    <string name="country_code_4">+32</string>
+    <string name="country_code_5">+44</string>
+    <string name="country_code_6">+1</string>
+    <string name="country_code_7">+52</string>
+    <string name="country_code_8">+27</string>
+    <string name="country_code_9">+81</string>
+
+    <!-- Country Capitals -->
+    <string name="country_capital_1">New Delhi</string>
+    <string name="country_capital_2">Tehran</string>
+    <string name="country_capital_3">Kinshasa</string>
+    <string name="country_capital_4">Bruxelles</string>
+    <string name="country_capital_5">Londres</string>
+    <string name="country_capital_6">Washington D.C.</string>
+    <string name="country_capital_7">Mexico City</string>
+    <string name="country_capital_8">Pretoria</string>
+    <string name="country_capital_9">Tokyo</string>
+
+    <!-- Country Descriptions -->
+    <string name="country_description_1">L\'Inde est un pays riche en culture, avec une histoire millénaire marquée par la diversité des religions, des langues et des traditions.</string>
+    <string name="country_description_2">L\'Iran est célèbre pour sa riche histoire perse, sa poésie, et ses monuments impressionnants datant de l\'antiquité.</string>
+    <string name="country_description_3">La République Démocratique du Congo (RDC) est connue pour ses vastes forêts tropicales, sa faune diversifiée et ses minéraux précieux.</string>
+    <string name="country_description_4">L\'Union Européenne est un groupement politique et économique regroupant plusieurs pays européens, favorisant la coopération et l\'intégration.</string>
+    <string name="country_description_5">L\'Angleterre est un lieu d\'histoire riche, avec des monuments emblématiques comme le Big Ben et Buckingham Palace, et une culture influente.</string>
+    <string name="country_description_6">Les États-Unis sont un pays d\'opportunités et de diversité, connu pour ses grandes villes comme New York et Los Angeles, ainsi que ses paysages variés.</string>
+    <string name="country_description_7">Le Mexique est célèbre pour sa cuisine épicée, ses plages paradisiaques, et ses traditions vibrantes comme le Día de los Muertos.</string>
+    <string name="country_description_8">L\'Afrique du Sud est un pays dynamique avec une histoire complexe, des paysages impressionnants, et une culture riche, marquée par l\'égalité et la réconciliation.</string>
+    <string name="country_description_9">Le Japon est connu pour son mélange unique de tradition ancienne et de technologie moderne, avec des temples majestueux et des villes dynamiques comme Tokyo.</string>
+
     <string name="about">About:</string>
-    <string name="years_old">Ces pays partagent des liens culturels et economiques complexes.</string>
-    <string name="expand_button_content_description">See more or less information about a dog.</string>
+    <string name="years_old">Ces pays partagent des liens culturels et économiques complexes.</string>
+    <string name="expand_button_content_description">See more or less information about a country.</string>
 </resources>

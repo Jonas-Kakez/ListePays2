@@ -33,7 +33,12 @@ fun Accueil(navController: NavController){
             Button(
                 onClick = { navController.navigate("flagScreen")}
             ) {
-                Text(text = "Montrer tout les drapeaux")
+                Text(text = "Afficher tous les drapeaux")
+            }
+            Button(
+                onClick = { navController.navigate("CountryScreen")}
+            ) {
+                Text(text = "Afficher tous les pays africains")
             }
         }
         }
